@@ -1,0 +1,12 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$geog-app-primary: mat-palette($mat-light-green, 400, 100, 700);
+$geog-app-accent: mat-palette($mat-yellow, 400, 100, 700);
+
+$geog-app-warn: mat-palette($mat-red);
+
+$geog-app-theme: mat-light-theme($geog-app-primary, $geog-app-accent, $geog-app-warn);
+
+@include angular-material-theme($geog-app-theme);

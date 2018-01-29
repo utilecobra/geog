@@ -17,4 +17,15 @@ interface Position {
   timestamp: number;
 }
 
-export { GeolocationOptions, Position };
+enum PositionErrorCode {
+  PERMISSION_DENIED = 1,
+  POSITION_UNAVAILABLE,
+  TIMEOUT
+}
+
+interface PositionError {
+  code: PositionErrorCode;
+  message: string;
+}
+
+export { GeolocationOptions, Position, PositionError };

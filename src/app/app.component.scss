@@ -1,3 +1,11 @@
-agm-map {
-  height: 500px;
+.app-main-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+}
+
+mat-toolbar h1 {
+  margin-left: 24px;
 }

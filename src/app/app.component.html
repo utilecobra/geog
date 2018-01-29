@@ -1,11 +1,17 @@
-<button mat-raised-button
-  color="primary"
-  (click)="whereAmI()">WHERE AM I?</button>
-<mat-progress-bar mode="indeterminate"
-  *ngIf="positioning"></mat-progress-bar>
-<agm-map
-  [clickableIcons]="false"
-  [latitude]="lat"
-  [longitude]="lng"></agm-map>
+<mat-sidenav-container class="app-main-container">
+  <mat-sidenav #sidenav postition="start" mode="over">
+    <app-nav></app-nav>
+  </mat-sidenav>
 
-<router-outlet></router-outlet>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button
+        (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <h1>{{title}}</h1>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

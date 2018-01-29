@@ -1,0 +1,9 @@
+<button mat-raised-button
+  color="primary"
+  (click)="whereAmI()">WHERE AM I?</button>
+<mat-progress-bar mode="indeterminate"
+  *ngIf="positioning"></mat-progress-bar>
+<agm-map
+  [clickableIcons]="false"
+  [latitude]="lat"
+  [longitude]="lng"></agm-map>

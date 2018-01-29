@@ -1,0 +1,5 @@
+<button mat-raised-button
+  (click)="auth.login()">Log In</button>
+<div *ngIf="auth.loggedIn" [innerHTML]="profileString"></div>
+<button mat-raised-button
+  (click)="auth.logout()">Log Out</button>

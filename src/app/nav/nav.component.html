@@ -1,0 +1,11 @@
+<div class="nav-top-section">
+  <img
+    class="avatar-large"
+    src="{{auth.userProfile.picture}}"/>
+  <span class="user-name" [innerText]="auth.userProfile.name"></span>
+</div>
+<mat-nav-list>
+    <a mat-list-item
+    routerLink="/temp/map-test"
+    routerLinkActive="active">Map Test</a>
+</mat-nav-list>

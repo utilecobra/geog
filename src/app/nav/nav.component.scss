@@ -1,0 +1,17 @@
+.nav-top-section {
+  width: 320px;
+  height: 128px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.avatar-large {
+  width: 64px;
+  border-radius: 50%;
+}
+
+.nav-top-section span.user-name {
+  font-size: 14px;
+  font-weight: 400;
+}
